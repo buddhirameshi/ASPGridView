@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB", "DB\DB.csproj", "{680828F4-9ED0-4C1E-8A85-82EFFE105EA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Layer", "Data Layer", "{F3218142-7E2A-450A-B2D0-CF41EDD748E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{6DE82AC0-3187-4058-B8C7-C7E7987DBB09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObjects", "DataAccessObjects\DataAccessObjects.csproj", "{E9A351EB-3C46-48CC-8FC9-FAFEB2B3494D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{D1EF58A5-A408-4972-897C-0880925C8529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{6E854C70-FF42-42D7-AE6F-25E0E6D81FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemsAPI", "ItemsAPI\ItemsAPI.csproj", "{F1FAD1A6-8CB7-4231-ADA1-480F2854C057}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{8B4D465A-0928-4D4B-BECA-4D6D74D59853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockController", "StockController\StockController.csproj", "{1377D551-0AC6-41E9-9429-41DF78D130D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{680828F4-9ED0-4C1E-8A85-82EFFE105EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680828F4-9ED0-4C1E-8A85-82EFFE105EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680828F4-9ED0-4C1E-8A85-82EFFE105EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680828F4-9ED0-4C1E-8A85-82EFFE105EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE82AC0-3187-4058-B8C7-C7E7987DBB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE82AC0-3187-4058-B8C7-C7E7987DBB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE82AC0-3187-4058-B8C7-C7E7987DBB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE82AC0-3187-4058-B8C7-C7E7987DBB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A351EB-3C46-48CC-8FC9-FAFEB2B3494D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A351EB-3C46-48CC-8FC9-FAFEB2B3494D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A351EB-3C46-48CC-8FC9-FAFEB2B3494D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A351EB-3C46-48CC-8FC9-FAFEB2B3494D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E854C70-FF42-42D7-AE6F-25E0E6D81FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E854C70-FF42-42D7-AE6F-25E0E6D81FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E854C70-FF42-42D7-AE6F-25E0E6D81FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E854C70-FF42-42D7-AE6F-25E0E6D81FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FAD1A6-8CB7-4231-ADA1-480F2854C057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FAD1A6-8CB7-4231-ADA1-480F2854C057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FAD1A6-8CB7-4231-ADA1-480F2854C057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FAD1A6-8CB7-4231-ADA1-480F2854C057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1377D551-0AC6-41E9-9429-41DF78D130D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1377D551-0AC6-41E9-9429-41DF78D130D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1377D551-0AC6-41E9-9429-41DF78D130D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1377D551-0AC6-41E9-9429-41DF78D130D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{680828F4-9ED0-4C1E-8A85-82EFFE105EA5} = {F3218142-7E2A-450A-B2D0-CF41EDD748E4}
+		{6DE82AC0-3187-4058-B8C7-C7E7987DBB09} = {F3218142-7E2A-450A-B2D0-CF41EDD748E4}
+		{E9A351EB-3C46-48CC-8FC9-FAFEB2B3494D} = {D1EF58A5-A408-4972-897C-0880925C8529}
+		{6E854C70-FF42-42D7-AE6F-25E0E6D81FA7} = {D1EF58A5-A408-4972-897C-0880925C8529}
+		{1377D551-0AC6-41E9-9429-41DF78D130D3} = {8B4D465A-0928-4D4B-BECA-4D6D74D59853}
+	EndGlobalSection
+EndGlobal
