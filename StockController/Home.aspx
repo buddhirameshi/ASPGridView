@@ -13,7 +13,7 @@
         <h1>
             Editable GridView Demo
         </h1>
-        <asp:GridView ID="itemGridView" runat="server" AutoGenerateEditButton="false"  EmptyDataRowStyle-BorderColor="White" ShowFooter="true" ShowHeaderWhenEmpty="true"  AutoGenerateColumns="false" OnRowEditing="OnRowEditing" OnRowUpdating="OnRowUpdating" OnRowCancelingEdit="OnRowEditCancelling" OnRowDeleting="OnRowDeleting" onrowcommand ="onrowcommand"   OnRowDataBound="OnRowDataBound" CssClass="grid-view" RowStyle-CssClass="rows" HeaderStyle-CssClass="header" FooterStyle-CssClass="footer" AllowPaging="true" OnPageIndexChanging="OnPaging" PageSize="2" PagerStyle-CssClass="pager">
+        <asp:GridView ID="itemGridView" runat="server" AutoGenerateEditButton="false"  EmptyDataRowStyle-BorderColor="White" ShowFooter="true" ShowHeaderWhenEmpty="true"  AutoGenerateColumns="false" OnRowEditing="OnRowEditing" OnRowUpdating="OnRowUpdating" OnRowCancelingEdit="OnRowEditCancelling" OnRowDeleting="OnRowDeleting" onrowcommand ="onrowcommand"   OnRowDataBound="OnRowDataBound" CssClass="grid-view" RowStyle-CssClass="rows" HeaderStyle-CssClass="header" FooterStyle-CssClass="footer" AllowPaging="true" OnPageIndexChanging="OnPaging" PageSize="2" PagerStyle-CssClass="pager" OnSorting="OnSorting" AllowSorting="true">
             <Columns>
         <asp:TemplateField InsertVisible="False"   SortExpression="ItemId" HeaderText="Item ID">
             <ItemTemplate>
