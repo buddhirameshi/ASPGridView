@@ -13,15 +13,15 @@
         <h1>
             Editable GridView Demo
         </h1>
-        <asp:GridView ID="itemGridView" runat="server" AutoGenerateEditButton="false"  EmptyDataRowStyle-BorderColor="White" ShowFooter="true" ShowHeaderWhenEmpty="true"  AutoGenerateColumns="false" OnRowEditing="OnRowEditing" OnRowUpdating="OnRowUpdating" OnRowCancelingEdit="OnRowEditCancelling" OnRowDeleting="OnRowDeleting" onrowcommand ="onrowcommand"   OnRowDataBound="OnRowDataBound" CssClass="grid-view" RowStyle-CssClass="rows" HeaderStyle-CssClass="header" FooterStyle-CssClass="footer" >
+        <asp:GridView ID="itemGridView" runat="server" AutoGenerateEditButton="false"  EmptyDataRowStyle-BorderColor="White" ShowFooter="true" ShowHeaderWhenEmpty="true"  AutoGenerateColumns="false" OnRowEditing="OnRowEditing" OnRowUpdating="OnRowUpdating" OnRowCancelingEdit="OnRowEditCancelling" OnRowDeleting="OnRowDeleting" onrowcommand ="onrowcommand"   OnRowDataBound="OnRowDataBound" CssClass="grid-view" RowStyle-CssClass="rows" HeaderStyle-CssClass="header" FooterStyle-CssClass="footer" AllowPaging="true" OnPageIndexChanging="OnPaging" PageSize="2" PagerStyle-CssClass="pager">
             <Columns>
         <asp:TemplateField InsertVisible="False"   SortExpression="ItemId" HeaderText="Item ID">
             <ItemTemplate>
-                <asp:Label ID="IdLabel" runat="server"  Text='<%# Bind("ItemId") %>'></asp:Label>
+                <asp:TextBox ID="IdLabel" runat="server"  Text='<%# Bind("ItemId") %>' ReadOnly="true" CssClass="textBox"></asp:TextBox>
             </ItemTemplate>
 
                <FooterTemplate>
-                            <asp:Label ID="addItemId" runat="server" ReadOnly="true"></asp:Label>
+                            <asp:TextBox ID="addItemId" runat="server" ReadOnly="true" CssClass="textBox"></asp:TextBox>
                 </FooterTemplate>
         </asp:TemplateField>
 
@@ -31,7 +31,7 @@
                 <asp:TextBox ID="DescriptionLabel" runat="server"  Text='<%# Bind("Description") %>' CssClass="textBox" ReadOnly="true"></asp:TextBox>
             </ItemTemplate>
                       <FooterTemplate>
-                            <asp:TextBox ID="addDescription" runat="server"  CssClass="textBox"></asp:TextBox>
+                            <asp:TextBox ID="addDescription" runat="server"  CssClass="addtextBox"></asp:TextBox>
                 </FooterTemplate>
 
         </asp:TemplateField>
@@ -45,7 +45,7 @@
                   <asp:RegularExpressionValidator runat="server" Display="Dynamic" ControlToValidate="priceLabel" ErrorMessage="Enter a valid value" ForeColor="Red" ValidationExpression="^\$?(\d+\.\d\d?\d?\d?|\d+)$">*Enter a valid value for price.</asp:RegularExpressionValidator>
             </ItemTemplate>
                      <FooterTemplate>
-                            <asp:TextBox ID="addPrice" runat="server"  Text="0.00" CssClass="textBox"></asp:TextBox>
+                            <asp:TextBox ID="addPrice" runat="server"  Text="0.00" CssClass="addtextBox"></asp:TextBox>
                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorPrice"  runat="server" ControlToValidate="addPrice" Display="Dynamic"  ForeColor="Red">Please enter a valid value. </asp:RequiredFieldValidator>
                   <asp:RegularExpressionValidator runat="server" Display="Dynamic" ControlToValidate="addPrice" ForeColor="Red" ValidationExpression="^\$?(\d+\.\d\d?\d?\d?|\d+)$">Enter a valid currency value.</asp:RegularExpressionValidator>
                 </FooterTemplate>

@@ -21,7 +21,8 @@ namespace StockController
 
         protected void OnPaging(object sender,GridViewPageEventArgs e)
         {
-
+            itemGridView.PageIndex = e.NewPageIndex;
+            LoadData();
         }
 
         protected void LoadData()
@@ -59,11 +60,14 @@ namespace StockController
             }
         }
 
+      
+
+
 
 
         protected void OnRowDeleting(object sender,GridViewDeleteEventArgs e)
         {
-            int id= Convert.ToInt32(((Label)itemGridView.Rows[e.RowIndex].Cells[0].FindControl("IdLabel")).Text);
+            int id= Convert.ToInt32(((TextBox)itemGridView.Rows[e.RowIndex].Cells[0].FindControl("IdLabel")).Text);
             dao.DeleteData(id);
             LoadData();
 
@@ -71,8 +75,8 @@ namespace StockController
 
         protected void OnRowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            TextBox dynamicTextBox = itemGridView.Rows[e.RowIndex].Cells[2].FindControl("priceLabel") as TextBox;
-            dynamicTextBox.ID = ((Label)(itemGridView.Rows[e.RowIndex].Cells[0].FindControl("idLabel"))).Text;
+            //TextBox dynamicTextBox = itemGridView.Rows[e.RowIndex].Cells[2].FindControl("priceLabel") as TextBox;
+            //dynamicTextBox.ID = ((TextBox)(itemGridView.Rows[e.RowIndex].Cells[0].FindControl("idLabel"))).Text;
 
             //RegularExpressionValidator regexValidator = new RegularExpressionValidator
             //{
@@ -97,7 +101,7 @@ namespace StockController
             //if (regexValidator.IsValid&&requiredValidator.IsValid)
             //{
             Item oneitem = new Item();
-                oneitem.ItemID = Convert.ToInt32(((Label)(itemGridView.Rows[e.RowIndex].Cells[0].FindControl("idLabel"))).Text);
+                oneitem.ItemID = Convert.ToInt32(((TextBox)(itemGridView.Rows[e.RowIndex].Cells[0].FindControl("idLabel"))).Text);
                 oneitem.Description = ((TextBox)(itemGridView.Rows[e.RowIndex].Cells[1].FindControl("DescriptionLabel"))).Text;
                 oneitem.Price = Convert.ToDecimal((itemGridView.Rows[e.RowIndex].Cells[2].FindControl("priceLabel") as TextBox).Text);
                 dao.UpdateDate(oneitem);
