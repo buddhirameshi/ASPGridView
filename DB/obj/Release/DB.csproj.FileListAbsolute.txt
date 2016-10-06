@@ -1,0 +1,5 @@
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\bin\Release\DB.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\bin\Release\DB.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Release\DB.csprojResolveAssemblyReference.cache
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Release\DB.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Release\DB.pdb

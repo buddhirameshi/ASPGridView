@@ -1,0 +1,10 @@
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\bin\Debug\BusinessObjects.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\bin\Debug\BusinessObjects.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Debug\BusinessObjects.csprojResolveAssemblyReference.cache
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Debug\BusinessObjects.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\obj\Debug\BusinessObjects.csprojResolveAssemblyReference.cache
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\obj\Debug\BusinessObjects.pdb

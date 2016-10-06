@@ -1,0 +1,5 @@
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\bin\Release\BusinessObjects.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\bin\Release\BusinessObjects.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Release\BusinessObjects.csprojResolveAssemblyReference.cache
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Release\BusinessObjects.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Release\BusinessObjects.pdb

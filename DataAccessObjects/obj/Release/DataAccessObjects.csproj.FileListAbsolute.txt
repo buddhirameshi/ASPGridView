@@ -1,0 +1,11 @@
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\DataAccessObjects.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\DataAccessObjects.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\BusinessObjects.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\Common.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\DB.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\BusinessObjects.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\Common.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\bin\Release\DB.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\obj\Release\DataAccessObjects.csprojResolveAssemblyReference.cache
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\obj\Release\DataAccessObjects.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\obj\Release\DataAccessObjects.pdb

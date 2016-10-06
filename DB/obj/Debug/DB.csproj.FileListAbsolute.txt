@@ -1,0 +1,10 @@
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\bin\Debug\DB.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\bin\Debug\DB.pdb
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Debug\DB.csprojResolveAssemblyReference.cache
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Debug\DB.dll
+c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Debug\DB.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\bin\Debug\DB.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\bin\Debug\DB.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\obj\Debug\DB.csprojResolveAssemblyReference.cache
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\obj\Debug\DB.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\obj\Debug\DB.pdb
