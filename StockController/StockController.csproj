@@ -68,6 +68,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\add.ico" />
+    <Content Include="Images\cancel.ico" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\Edit.ico" />
+    <Content Include="Images\update.ico" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\AspGridView.pubxml" />
     <None Include="Web.Debug.config">

@@ -74,26 +74,26 @@ namespace StockController
             TextBox dynamicTextBox = itemGridView.Rows[e.RowIndex].Cells[2].FindControl("priceLabel") as TextBox;
             dynamicTextBox.ID = ((Label)(itemGridView.Rows[e.RowIndex].Cells[0].FindControl("idLabel"))).Text;
 
-            RegularExpressionValidator regexValidator = new RegularExpressionValidator
-            {
-                ControlToValidate = dynamicTextBox.ID,
-                ForeColor = Color.Red,
-                ErrorMessage = "Invalid Input type",
-                ValidationGroup = "Update",
-                ValidationExpression = @"^\$?(\d+\.\d\d?\d?\d?|\d+)$"
-            };
+            //RegularExpressionValidator regexValidator = new RegularExpressionValidator
+            //{
+            //    ControlToValidate = dynamicTextBox.ID,
+            //    ForeColor = Color.Red,
+            //    ErrorMessage = "Invalid Input type",
+            //    ValidationGroup = "Update",
+            //    ValidationExpression = @"^\$?(\d+\.\d\d?\d?\d?|\d+)$"
+            //};
 
-            RequiredFieldValidator requiredValidator = new RequiredFieldValidator
-            {
-                ControlToValidate = dynamicTextBox.ID,
-                ForeColor = Color.Red,
-                ErrorMessage = "Data Required",
-                ValidationGroup = "Update"
-            };
-            itemGridView.Rows[e.RowIndex].Cells[2].Controls.Add(requiredValidator);
-            itemGridView.Rows[e.RowIndex].Cells[2].Controls.Add(regexValidator);
-            regexValidator.Validate();
-            requiredValidator.Validate();
+            //RequiredFieldValidator requiredValidator = new RequiredFieldValidator
+            //{
+            //    ControlToValidate = dynamicTextBox.ID,
+            //    ForeColor = Color.Red,
+            //    ErrorMessage = "Data Required",
+            //    ValidationGroup = "Update"
+            //};
+            //itemGridView.Rows[e.RowIndex].Cells[2].Controls.Add(requiredValidator);
+            //itemGridView.Rows[e.RowIndex].Cells[2].Controls.Add(regexValidator);
+            //regexValidator.Validate();
+            //requiredValidator.Validate();
             //if (regexValidator.IsValid&&requiredValidator.IsValid)
             //{
             Item oneitem = new Item();

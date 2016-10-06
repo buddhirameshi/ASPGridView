@@ -50,3 +50,5 @@ C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockCo
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController\obj\Debug\StockController.csprojResolveAssemblyReference.cache
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController\obj\Debug\StockController.dll
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController\obj\Debug\StockController.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController\bin\StockController.dll.CodeAnalysisLog.xml
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController\bin\StockController.dll.lastcodeanalysissucceeded

@@ -4,12 +4,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="Styles/StockControllerStyles.css" rel="stylesheet" />
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:GridView ID="itemGridView" runat="server" AutoGenerateEditButton="false"  EmptyDataRowStyle-BorderColor="White" ShowFooter="true" ShowHeaderWhenEmpty="true"  AutoGenerateColumns="false" OnRowEditing="OnRowEditing" OnRowUpdating="OnRowUpdating" OnRowCancelingEdit="OnRowEditCancelling" OnRowDeleting="OnRowDeleting" onrowcommand ="onrowcommand" OnPageIndexChanging="OnPaging" PageSize="1" AllowPaging="true" OnRowDataBound="OnRowDataBound" >
+        <h1>
+            Editable GridView Demo
+        </h1>
+        <asp:GridView ID="itemGridView" runat="server" AutoGenerateEditButton="false"  EmptyDataRowStyle-BorderColor="White" ShowFooter="true" ShowHeaderWhenEmpty="true"  AutoGenerateColumns="false" OnRowEditing="OnRowEditing" OnRowUpdating="OnRowUpdating" OnRowCancelingEdit="OnRowEditCancelling" OnRowDeleting="OnRowDeleting" onrowcommand ="onrowcommand"   OnRowDataBound="OnRowDataBound" CssClass="grid-view" RowStyle-CssClass="rows" HeaderStyle-CssClass="header" FooterStyle-CssClass="footer" >
             <Columns>
         <asp:TemplateField InsertVisible="False"   SortExpression="ItemId" HeaderText="Item ID">
             <ItemTemplate>
@@ -17,17 +21,17 @@
             </ItemTemplate>
 
                <FooterTemplate>
-                            <asp:TextBox ID="addItemId" runat="server" ReadOnly="true"></asp:TextBox>
+                            <asp:Label ID="addItemId" runat="server" ReadOnly="true"></asp:Label>
                 </FooterTemplate>
         </asp:TemplateField>
 
         <asp:TemplateField  InsertVisible="False" SortExpression="Description" HeaderText="Description">
 
             <ItemTemplate>
-                <asp:TextBox ID="DescriptionLabel" runat="server"  Text='<%# Bind("Description") %>' ReadOnly="true"></asp:TextBox>
+                <asp:TextBox ID="DescriptionLabel" runat="server"  Text='<%# Bind("Description") %>' CssClass="textBox" ReadOnly="true"></asp:TextBox>
             </ItemTemplate>
                       <FooterTemplate>
-                            <asp:TextBox ID="addDescription" runat="server" ></asp:TextBox>
+                            <asp:TextBox ID="addDescription" runat="server"  CssClass="textBox"></asp:TextBox>
                 </FooterTemplate>
 
         </asp:TemplateField>
@@ -36,12 +40,12 @@
            <asp:TemplateField  InsertVisible="False"  SortExpression="Price" HeaderText="Price ($)">
 
             <ItemTemplate>
-                <asp:TextBox ID="priceLabel" runat="server"  Text='<%# Bind("Price") %>' ReadOnly="true"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorPrice"  runat="server" ControlToValidate="priceLabel" Display="Dynamic"  ForeColor="Red" ErrorMessage="Value is required."> * </asp:RequiredFieldValidator>
-                  <asp:RegularExpressionValidator runat="server" Display="Dynamic" ControlToValidate="priceLabel" ErrorMessage="Enter a valid value" ForeColor="Red" ValidationExpression="^\$?(\d+\.\d\d?\d?\d?|\d+)$">Enter a valid value for price.</asp:RegularExpressionValidator>
+                <asp:TextBox ID="priceLabel" CssClass="textBox" runat="server"  Text='<%# Bind("Price") %>' ReadOnly="true"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorPrice"  runat="server" ControlToValidate="priceLabel" Display="Dynamic"  ForeColor="Red" > *Value is required. </asp:RequiredFieldValidator>
+                  <asp:RegularExpressionValidator runat="server" Display="Dynamic" ControlToValidate="priceLabel" ErrorMessage="Enter a valid value" ForeColor="Red" ValidationExpression="^\$?(\d+\.\d\d?\d?\d?|\d+)$">*Enter a valid value for price.</asp:RegularExpressionValidator>
             </ItemTemplate>
                      <FooterTemplate>
-                            <asp:TextBox ID="addPrice" runat="server"  Text="0.00"></asp:TextBox>
+                            <asp:TextBox ID="addPrice" runat="server"  Text="0.00" CssClass="textBox"></asp:TextBox>
                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorPrice"  runat="server" ControlToValidate="addPrice" Display="Dynamic"  ForeColor="Red">Please enter a valid value. </asp:RequiredFieldValidator>
                   <asp:RegularExpressionValidator runat="server" Display="Dynamic" ControlToValidate="addPrice" ForeColor="Red" ValidationExpression="^\$?(\d+\.\d\d?\d?\d?|\d+)$">Enter a valid currency value.</asp:RegularExpressionValidator>
                 </FooterTemplate>
@@ -74,20 +78,24 @@
 
                 <asp:TemplateField>                   
                     <ItemTemplate>
-                        <asp:LinkButton Text="Edit" runat="server" CommandName="Edit"></asp:LinkButton>
+                        <%--<asp:LinkButton Text="Edit" runat="server" CommandName="Edit"></asp:LinkButton>--%>
+                          <asp:ImageButton  runat="server" ImageUrl="Images/edit.ico" CommandName="Edit" Width="30px" Height="30px" ImageAlign="Middle" AlternateText="Edit" ToolTip="Edit"/>
                      </ItemTemplate>
              
                     <EditItemTemplate>
-                        <asp:LinkButton ID="updateId" Text="Update" runat="server" CommandName="Update"></asp:LinkButton>
-                        <asp:LinkButton Text="Cancel" runat="server" CommandName="Cancel"></asp:LinkButton>
+                          <asp:ImageButton ID="updateId" runat="server" ImageUrl="Images/update.ico" CommandName="Update" Width="30px" Height="30px" ImageAlign="Middle" AlternateText="Update" ToolTip="Update"/>
+                       <%-- <asp:LinkButton ID="updateId" Text="Update" runat="server" CommandName="Update"></asp:LinkButton>--%>
+                         <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="Images/cancel.ico" CommandName="Cancel" Width="30px" Height="30px" ImageAlign="Middle" AlternateText="Cancel" ToolTip="Cancel"/>
+                       <%--  <asp:LinkButton Text="Cancel" runat="server" CommandName="Cancel"></asp:LinkButton>--%>
                     </EditItemTemplate>
                </asp:TemplateField>    
                  <asp:TemplateField>                   
                     <ItemTemplate>
-                        <asp:LinkButton Text="Delete" runat="server" CommandName="Delete"></asp:LinkButton>
+                     <asp:ImageButton runat="server" ImageUrl="Images/delete.png" CommandName="Delete" Width="30px" Height="30px" ImageAlign="Middle" AlternateText="Delete" ToolTip="Delete"/>
                      </ItemTemplate>  
                      <FooterTemplate>
-                             <asp:LinkButton Text="Add" runat="server" CommandName="Add"></asp:LinkButton>
+                         <asp:ImageButton runat="server" ImageUrl="Images/add.ico" CommandName="Add" Width="30px" Height="30px" ImageAlign="Middle" AlternateText="Add" ToolTip="Add"/>
+                           <%--  <asp:LinkButton Text="Add" runat="server" CommandName="Add"></asp:LinkButton>--%>
                      </FooterTemplate>
                   </asp:TemplateField> 
                           
