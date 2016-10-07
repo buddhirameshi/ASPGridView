@@ -10,13 +10,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/BusinessObjects.dll">
-      <publishTime>10/05/2016 20:05:15</publishTime>
+      <publishTime>10/06/2016 13:07:13</publishTime>
     </File>
     <File Include="bin/DataAccessObjects.dll">
-      <publishTime>10/05/2016 20:05:15</publishTime>
+      <publishTime>10/06/2016 13:07:14</publishTime>
     </File>
     <File Include="bin/DB.dll">
-      <publishTime>10/05/2016 20:05:15</publishTime>
+      <publishTime>10/06/2016 13:07:13</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>06/15/2015 02:06:24</publishTime>
@@ -58,22 +58,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/StockController.dll">
-      <publishTime>10/05/2016 20:05:29</publishTime>
+      <publishTime>10/06/2016 13:07:28</publishTime>
     </File>
     <File Include="Home.aspx">
-      <publishTime>10/05/2016 19:56:29</publishTime>
+      <publishTime>10/06/2016 13:03:19</publishTime>
+    </File>
+    <File Include="Images/add.ico">
+      <publishTime>10/06/2016 12:52:07</publishTime>
+    </File>
+    <File Include="Images/cancel.ico">
+      <publishTime>10/06/2016 12:53:35</publishTime>
+    </File>
+    <File Include="Images/delete.png">
+      <publishTime>10/06/2016 12:48:01</publishTime>
+    </File>
+    <File Include="Images/Edit.ico">
+      <publishTime>10/06/2016 12:45:18</publishTime>
+    </File>
+    <File Include="Images/update.ico">
+      <publishTime>10/06/2016 12:54:46</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>10/05/2016 12:36:38</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>10/05/2016 20:14:53</publishTime>
+      <publishTime>10/06/2016 13:07:34</publishTime>
     </File>
     <File Include="Styles/StockControllerStyles.css">
-      <publishTime>10/05/2016 12:37:52</publishTime>
+      <publishTime>10/06/2016 13:04:22</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/05/2016 20:05:31</publishTime>
+      <publishTime>10/06/2016 13:07:31</publishTime>
     </File>
   </ItemGroup>
 </Project>

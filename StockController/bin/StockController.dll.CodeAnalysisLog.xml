@@ -6,10 +6,10 @@
    <Modules>
     <Module Name="stockcontroller.dll">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'StockController.dll' with a strong name key.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Mark 'StockController.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
       </Message>
      </Messages>
@@ -18,66 +18,108 @@
        <Types>
         <Type Name="Home" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Members>
+          <Member Name="#dir" Kind="Property" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="dir" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="186">Correct the casing of 'dir' in member name 'Home.dir' by changing it to 'Dir'.</Issue>
+            </Message>
+            <Message Id="dir" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="186">Correct the spelling of 'dir' in member name 'Home.dir' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnPaging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="26">In method 'Home.OnPaging(object, GridViewPageEventArgs)', object 'sortedView' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'sortedView' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="dt" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="25">'Home.OnPaging(object, GridViewPageEventArgs)' declares a variable, 'dt', of type 'DataTable', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="27">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'Home.OnPaging(object, GridViewPageEventArgs)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="23">In externally visible method 'Home.OnPaging(object, GridViewPageEventArgs)', validate parameter 'e' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
           <Member Name="#onrowcommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="Breaking">
-             <Issue Certainty="50" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="116">Consider changing the type of parameter 'e' in 'Home.onrowcommand(object, GridViewCommandEventArgs)' from 'GridViewCommandEventArgs' to its base type 'CommandEventArgs'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="129">Consider changing the type of parameter 'e' in 'Home.onrowcommand(object, GridViewCommandEventArgs)' from 'GridViewCommandEventArgs' to its base type 'CommandEventArgs'. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Issue>
             </Message>
-            <Message Id="onrowcommand" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="116">Correct the casing of 'onrowcommand' in member name 'Home.onrowcommand(object, GridViewCommandEventArgs)' by changing it to 'Onrowcommand'.</Issue>
+            <Message Id="onrowcommand" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="129">Correct the casing of 'onrowcommand' in member name 'Home.onrowcommand(object, GridViewCommandEventArgs)' by changing it to 'Onrowcommand'.</Issue>
             </Message>
-            <Message Id="onrowcommand" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="116">Correct the spelling of 'onrowcommand' in member name 'Home.onrowcommand(object, GridViewCommandEventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            <Message Id="onrowcommand" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="129">Correct the spelling of 'onrowcommand' in member name 'Home.onrowcommand(object, GridViewCommandEventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
             </Message>
-            <Message Id="System.Convert.ToDecimal(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="NonBreaking">
-             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="121">Because the behavior of 'Convert.ToDecimal(string)' could vary based on the current user's locale settings, replace this call in 'Home.onrowcommand(object, GridViewCommandEventArgs)' with a call to 'Convert.ToDecimal(string, IFormatProvider)'. If the result of 'Convert.ToDecimal(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            <Message Id="System.Convert.ToDecimal(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="134">Because the behavior of 'Convert.ToDecimal(string)' could vary based on the current user's locale settings, replace this call in 'Home.onrowcommand(object, GridViewCommandEventArgs)' with a call to 'Convert.ToDecimal(string, IFormatProvider)'. If the result of 'Convert.ToDecimal(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
             </Message>
-            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="117">In externally visible method 'Home.onrowcommand(object, GridViewCommandEventArgs)', validate parameter 'e' before using it.</Issue>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="130">In externally visible method 'Home.onrowcommand(object, GridViewCommandEventArgs)', validate parameter 'e' before using it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#OnRowDataBound(System.Object,System.Web.UI.WebControls.GridViewRowEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="51">In externally visible method 'Home.OnRowDataBound(object, GridViewRowEventArgs)', validate parameter 'e' before using it.</Issue>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="56">In externally visible method 'Home.OnRowDataBound(object, GridViewRowEventArgs)', validate parameter 'e' before using it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#OnRowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="NonBreaking">
-             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="66">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Home.OnRowDeleting(object, GridViewDeleteEventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="68">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Home.OnRowDeleting(object, GridViewDeleteEventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
             </Message>
-            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="66">In externally visible method 'Home.OnRowDeleting(object, GridViewDeleteEventArgs)', validate parameter 'e' before using it.</Issue>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="68">In externally visible method 'Home.OnRowDeleting(object, GridViewDeleteEventArgs)', validate parameter 'e' before using it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#OnRowEditCancelling(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="Cancelling" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="Breaking">
-             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="128">Replace the term 'Cancelling' in member name 'Home.OnRowEditCancelling(object, GridViewCancelEditEventArgs)' with the preferred alternate 'Canceling'.</Issue>
+            <Message Id="Cancelling" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="141">Replace the term 'Cancelling' in member name 'Home.OnRowEditCancelling(object, GridViewCancelEditEventArgs)' with the preferred alternate 'Canceling'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#OnRowEditing(System.Object,System.Web.UI.WebControls.GridViewEditEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="42">In externally visible method 'Home.OnRowEditing(object, GridViewEditEventArgs)', validate parameter 'e' before using it.</Issue>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="48">In externally visible method 'Home.OnRowEditing(object, GridViewEditEventArgs)', validate parameter 'e' before using it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#OnRowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="System.Convert.ToDecimal(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="NonBreaking">
-             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="102">Because the behavior of 'Convert.ToDecimal(string)' could vary based on the current user's locale settings, replace this call in 'Home.OnRowUpdating(object, GridViewUpdateEventArgs)' with a call to 'Convert.ToDecimal(string, IFormatProvider)'. If the result of 'Convert.ToDecimal(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            <Message Id="System.Convert.ToDecimal(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="104">Because the behavior of 'Convert.ToDecimal(string)' could vary based on the current user's locale settings, replace this call in 'Home.OnRowUpdating(object, GridViewUpdateEventArgs)' with a call to 'Convert.ToDecimal(string, IFormatProvider)'. If the result of 'Convert.ToDecimal(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
             </Message>
-            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="NonBreaking">
-             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="100">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Home.OnRowUpdating(object, GridViewUpdateEventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="102">Because the behavior of 'Convert.ToInt32(string)' could vary based on the current user's locale settings, replace this call in 'Home.OnRowUpdating(object, GridViewUpdateEventArgs)' with a call to 'Convert.ToInt32(string, IFormatProvider)'. If the result of 'Convert.ToInt32(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
             </Message>
-            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 16:57:10Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="74">In externally visible method 'Home.OnRowUpdating(object, GridViewUpdateEventArgs)', validate parameter 'e' before using it.</Issue>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="102">In externally visible method 'Home.OnRowUpdating(object, GridViewUpdateEventArgs)', validate parameter 'e' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnSorting(System.Object,System.Web.UI.WebControls.GridViewSortEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="120">In method 'Home.OnSorting(object, GridViewSortEventArgs)', object 'sortedView' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'sortedView' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="dt" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="119">'Home.OnSorting(object, GridViewSortEventArgs)' declares a variable, 'dt', of type 'DataTable', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="122">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'Home.OnSorting(object, GridViewSortEventArgs)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-10-06 18:46:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\StockController" File="Home.aspx.cs" Line="121">In externally visible method 'Home.OnSorting(object, GridViewSortEventArgs)', validate parameter 'e' before using it.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -111,6 +153,16 @@
    <MessageLevel Certainty="50">Error</MessageLevel>
    <File Name="designrules.dll" Version="14.0.0.0" />
   </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
    <Name>Identifiers should be cased correctly</Name>
    <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
@@ -141,10 +193,21 @@
    <MessageLevel Certainty="95">Error</MessageLevel>
    <File Name="designrules.dll" Version="14.0.0.0" />
   </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
    <Name>Specify IFormatProvider</Name>
    <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
    <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
    <Owner />
    <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
    <Email>[none]</Email>
