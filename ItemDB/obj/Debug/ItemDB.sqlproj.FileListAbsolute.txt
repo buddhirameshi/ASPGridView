@@ -1,9 +1,5 @@
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\bin\Debug\ItemDB.dacpac
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\bin\Debug\ItemDB.dll
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\bin\Debug\ItemDB.pdb
-C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\obj\Debug\Model.xml
-C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\obj\Debug\refactor.xml
-C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\obj\Debug\postdeploy.sql
-C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\obj\Debug\predeploy.sql
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\obj\Debug\ItemDB.dll
 C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\ItemDB\obj\Debug\ItemDB.pdb

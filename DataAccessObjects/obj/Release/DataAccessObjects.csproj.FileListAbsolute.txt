@@ -9,3 +9,14 @@ c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\Dat
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\obj\Release\DataAccessObjects.csprojResolveAssemblyReference.cache
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\obj\Release\DataAccessObjects.dll
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DataAccessObjects\obj\Release\DataAccessObjects.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\DataAccessObjects.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\DataAccessObjects.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\BusinessObjects.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\Common.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\DB.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\BusinessObjects.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\Common.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\bin\Release\DB.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\obj\Release\DataAccessObjects.csprojResolveAssemblyReference.cache
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\obj\Release\DataAccessObjects.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DataAccessObjects\obj\Release\DataAccessObjects.pdb

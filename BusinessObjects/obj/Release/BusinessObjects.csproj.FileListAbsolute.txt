@@ -3,3 +3,8 @@ c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\Bus
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Release\BusinessObjects.csprojResolveAssemblyReference.cache
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Release\BusinessObjects.dll
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\BusinessObjects\obj\Release\BusinessObjects.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\bin\Release\BusinessObjects.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\bin\Release\BusinessObjects.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\obj\Release\BusinessObjects.csprojResolveAssemblyReference.cache
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\obj\Release\BusinessObjects.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\BusinessObjects\obj\Release\BusinessObjects.pdb

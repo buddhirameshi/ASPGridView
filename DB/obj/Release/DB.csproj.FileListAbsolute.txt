@@ -3,3 +3,8 @@ c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Release\DB.csprojResolveAssemblyReference.cache
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Release\DB.dll
 c:\users\buddhirameshi\documents\visual studio 2015\Projects\StupidityKiller\DB\obj\Release\DB.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\bin\Release\DB.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\bin\Release\DB.pdb
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\obj\Release\DB.csprojResolveAssemblyReference.cache
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\obj\Release\DB.dll
+C:\Users\buddhirameshi\Documents\Visual Studio 2015\Projects\AspGridView\DB\obj\Release\DB.pdb
