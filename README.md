@@ -13,5 +13,5 @@ Below are the simple 1-2-3 steps to deploy the project
 
 -Publish the DB Project (You might have to change the Target Platform of SQL Server version  in Project properties under "Project Settings" tab. My SQL Server version is Server 2012. Select your SQL version from the list.)
 
--There you go!!
+-There you go. Run the project!!
 
